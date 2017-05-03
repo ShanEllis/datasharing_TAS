@@ -51,7 +51,9 @@ You know the raw data are in the right format if you:
 3. Did not remove any data from the data set
 4. Did not summarize the data in any way
 
-If you made any modifications to the raw data, it is not the raw form of the data. It can often help to consider what would happen if new data for a study were to arrive to the statistician. If this new data requires no modification before being combined with the first set of raw data provided, it is likely raw data. Reporting modified data as raw data is a very common way to slow down the analysis process, since the analyst will often have to do a forensic study of your data to figure out why the raw data looks weird.
+If you made any modifications to the raw data, it is not the raw form of the data. For example, statisticians are often supplied summary statistics (such as averages) rather than the underlying raw data used to calculate these summary statistics. While the intent of the data collector is to be helpful, the reality is that this slows the analyst down. Statisticians can easily calculate any appropriate summary statistics from the raw data. Being provided the raw data is essential for accurate analysis.
+
+It can often help to consider what would happen if new data for a study were to arrive to the statistician. If this new data requires no modification before being combined with the first set of raw data provided, it is likely raw data. Reporting modified data as raw data is a very common way to slow down the analysis process, since the analyst will often have to do a forensic study of your data to figure out why the raw data looks weird.
 
 ### 2.2 The tidy data set
 
@@ -72,7 +74,7 @@ With regards to the formatting of these data, if you are sharing your data with 
 
 ### 2.3 The code book
 
-For almost any data set, the measurements you calculate will need to be described in more detail than you can or should sneak into the spreadsheet. The code book (also referred to as a 'data dictionary') contains this information. At minimum it should contain:
+For almost any data set, the measurements you calculate will need to be described in more detail than you can or should sneak into the spreadsheet. The code book (also referred to as a 'data dictionary') contains this information. At a minimum it should contain:
 
 1. Information about the variables (including units!) in the data set not contained in the tidy data.
 1. Information about the summary choices you made.
