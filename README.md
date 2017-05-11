@@ -3,7 +3,7 @@ How to share data for collaboration
 Shannon E. Ellis and Jeffrey T. Leek
 
 1. Introduction
----------------
+===============
 
 A set of general principles for sharing data have emerged within the statistics community (Broman 2017; Wickham 2014; Wilson et al. 2016; White et al. 2013). But these principles are not always clear to researchers, scientists, or collaborators generating the data. This has led to a disconnect between those generating data and those analyzing it about the best way for data to be shared. To bridge this divide, we have developed general guidelines for anyone generating data who anticipates their data will be shared with a statistician, data scientist, or analyst at some point during their project. The goals of this guide are to provide some instruction on the best way to share data to avoid the most common pitfalls and sources of delay in the transition from data collection to data analysis (J. T. Leek and Peng 2015). This guide focuses on data sharing between collaborators and does not directly address best practices for how to make the data behind a published paper available in public repositories. While we do not focus on the pitfalls and specific requirements of that process here, following many of the guidelines we present will be critical during that process as well.
 
@@ -19,7 +19,7 @@ We provide these guidelines on data sharing and explain the reasoning behind the
 -   Statisticians or data scientists seeking a concise guide to share with collaborators to clarify best practices for data sharing
 
 2. What you should deliver to the statistician
-----------------------------------------------
+==============================================
 
 To facilitate the most efficient and timely analysis this is the information you should pass to a statistician:
 
@@ -108,7 +108,7 @@ Alternatively, in many cases, the person who collected the data may not know how
 You should also include information about which system (Mac/Windows/Linux) you used the software on, the specific version of any software used, and whether you tried it more than once to confirm it gave the same results. Ideally, you will run this by a fellow student or labmate to confirm that they can obtain the same output file you did.
 
 3. What you should expect from the analyst
-------------------------------------------
+==========================================
 
 When you turn over a properly tidied data set it dramatically decreases the workload on the statistician and minimizes the likelihood of errors during analysis. By taking the time to tidy the data, the data generator, who knows the details of the data generated better than anyone else, can expect to get the analysis back sooner and can be more confident in its accuracy. Careful statisticians will check your recipe, ask questions about steps you performed, and try to confirm that they can obtain the same tidy data that you did with, at minimum, spot checks.
 
@@ -121,7 +121,7 @@ You should then expect from the statistician:
 This is the information you will use in the supplement to establish reproducibility and precision of your results. Each of the steps in the analysis should be clearly explained and you should ask questions when you don't understand what the analyst did. It is the responsibility of both the statistician and the scientist to understand the statistical analysis. You may not be able to perform the exact analyses without the statistician's code, but you should be able to explain why the statistician performed each step to a labmate or your principal investigator.
 
 4. Discussion
--------------
+=============
 
 These guidelines aim to provide guidelines for effective and efficient data sharing between those generating data and those analyzing it. We highlight the need for data generators to (1) provide data in a tidy and consistently coded format, (2) include all the necessary experimental information regarding data generation, and (3) to explain any steps taken to pre-process the data. If followed, these guidelines will both speed up analysis turnaround time and minimize the likelihood of errors during analysis.
 
