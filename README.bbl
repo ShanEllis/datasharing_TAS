@@ -1,0 +1,62 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Baggerly}{2010}{baggerly2010disclose}
+Baggerly, K.  \harvardyearleft 2010\harvardyearright , `Disclose all data in
+  publications', {\em Nature} {\bf 467}(7314),~401.
+
+\harvarditem{Broman}{n.d.}{_data_org}
+Broman, K.  \harvardyearleft n.d.\harvardyearright , `data organization'.
+\newline\harvardurl{http://kbroman.org/dataorg/}
+
+\harvarditem{Leek \harvardand\ Peng}{2015}{leek2015opinion}
+Leek, J.~T. \harvardand\ Peng, R.~D.  \harvardyearleft 2015\harvardyearright ,
+  `Opinion: Reproducible research can still be wrong: Adopting a prevention
+  approach', {\em Proceedings of the National Academy of Sciences} {\bf
+  112}(6),~1645--1646.
+
+\harvarditem{{\em Leek Group}}{n.d.}{_jtleek}
+{\em Leek Group}  \harvardyearleft n.d.\harvardyearright .
+\newline\harvardurl{http://jtleek.com/}
+
+\harvarditem{Peng}{2011}{peng_reproducible_2011}
+Peng, R.~D.  \harvardyearleft 2011\harvardyearright , `Reproducible {Research}
+  in {Computational} {Science}', {\em Science} {\bf 334}(6060),~1226--1227.
+\newline\harvardurl{http://science.sciencemag.org/content/334/6060/1226}
+
+\harvarditem{{\em R: {The} {R} {Project} for {Statistical}
+  {Computing}}}{n.d.}{_r}
+{\em R: {The} {R} {Project} for {Statistical} {Computing}}  \harvardyearleft
+  n.d.\harvardyearright .
+\newline\harvardurl{https://www.r-project.org/}
+
+\harvarditem[White et~al.]{White, Baldridge, Brym, Locey, McGlinn \harvardand\
+  Supp}{2013}{white_nine_2013}
+White, E.~P., Baldridge, E., Brym, Z.~T., Locey, K.~J., McGlinn, D.~J.
+  \harvardand\ Supp, S.~R.  \harvardyearleft 2013\harvardyearright , `Nine
+  simple ways to make it easier to (re)use your data', {\em Ideas in Ecology
+  and Evolution} {\bf 6}(2).
+\newline\harvardurl{http://ojs.library.queensu.ca/index.php/IEE/article/view/4608}
+
+\harvarditem{Wickham}{2014}{_tidy_data}
+Wickham, H.  \harvardyearleft 2014\harvardyearright , `Tidy data', {\em Journal
+  of Statistical Software} {\bf 59}(10).
+\newline\harvardurl{https://www.jstatsoft.org/article/view/v059i10}
+
+\harvarditem[Wilson et~al.]{Wilson, Bryan, Cranston, Kitzes, Nederbragt
+  \harvardand\ Teal}{2016}{wilson_good_2016}
+Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L. \harvardand\
+  Teal, T.~K.  \harvardyearleft 2016\harvardyearright , `Good {Enough}
+  {Practices} in {Scientific} {Computing}', {\em arXiv:1609.00037 [cs]} .
+\newblock arXiv: 1609.00037.
+\newline\harvardurl{http://arxiv.org/abs/1609.00037}
+
+\harvarditem[Zeeberg et~al.]{Zeeberg, Riss, Kane, Bussey, Uchio, Linehan,
+  Barrett \harvardand\ Weinstein}{2004}{zeeberg_mistaken_2004}
+Zeeberg, B.~R., Riss, J., Kane, D.~W., Bussey, K.~J., Uchio, E., Linehan,
+  W.~M., Barrett, J.~C. \harvardand\ Weinstein, J.~N.  \harvardyearleft
+  2004\harvardyearright , `Mistaken {Identifiers}: {Gene} name errors can be
+  introduced inadvertently when using {Excel} in bioinformatics', {\em BMC
+  Bioinformatics} {\bf 5},~80.
+\newline\harvardurl{http://dx.doi.org/10.1186/1471-2105-5-80}
+
+\end{thebibliography}
