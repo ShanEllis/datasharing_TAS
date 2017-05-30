@@ -44,10 +44,12 @@ additionally like to thank Foram Ashar, Pat Carlson, Claude Chaunier,
 Leonardo Collado-Torres, Dan Fowler, David Jankoski, Sean Kross, Gene
 Miller, Leslie Myint, and Nick Reich for their suggestions and edits.} \\
     Department of Biostatistics, Johns Hopkins Bloomberg School of Public
-    Health\\
+    Health and Center for Computational Biology, Johns Hopkins University
+    and Center for Computational Biology, Johns Hopkins University\\
      and \\     Jeffrey T. Leek \\
     Department of Biostatistics, Johns Hopkins Bloomberg School of Public
-    Health\\
+    Health and Center for Computational Biology, Johns Hopkins University
+    and Center for Computational Biology, Johns Hopkins University\\
       }
   \maketitle
 } \fi
@@ -65,7 +67,15 @@ Miller, Leslie Myint, and Nick Reich for their suggestions and edits.} \\
 
 \bigskip
 \begin{abstract}
-The text of your abstract. 200 or fewer words.
+Within the statistics community, a number of guiding principles for
+sharing data have emerged; however, these principles are not always made
+clear to collaborators generating the data. To bridge this divide, we
+have established a set of guidelines for sharing data. In these, we
+highlight the need to provide raw data to the statistician, the
+importance of consistent formatting, and the necessity of including all
+essential experimental information and pre-processing steps carried out
+to the statistician. With these guidelines we hope to avoid errors and
+delays in data analysis.
 \end{abstract}
 
 \noindent%
@@ -170,14 +180,14 @@ throughout the workflow. Here are some examples of the raw form of data:
 \begin{itemize}
 \tightlist
 \item
-  The strange binary file {[}\_binary\_2017{]} your measurement machine
+  The strange binary file \citep{_binary_2017} your measurement machine
   spits out
 \item
   The unformatted Excel file with 10 worksheets the company you
   contracted with sent you
 \item
-  The complicated JSON {[}\_json\_2017{]} data you got from scraping the
-  Twitter API {[}\_twitter{]}
+  The complicated JSON {[}json\_2017{]} data you got from scraping the
+  Twitter API \citep{noauthor_twitter_nodate}
 \item
   The hand-entered numbers you collected looking through a microscope
 \end{itemize}
@@ -233,16 +243,41 @@ R \citep{_r}, the principles are more generally applicable:
 \item
   If you have multiple tables, they should include a column in the table
   (with the same column label!) that allows them to be joined or merged
-  (see \textbf{Figure 1A-B}).
+  (see \textbf{Figure \ref{fig1}A-B}).
 \end{enumerate}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics{Fig1.pdf}
+\caption{Data Organization \textbf{A}. Raw (and tidy) data. The raw
+measurements taken during the experiment are included here for the 40
+patients (rows) and 20 hormones (columns) measured. Indicating that
+these are raw values conveys that no manipulation or computation has
+been done on the included values. \textbf{B}. Tidy data. These data
+convey the important clinical information to your statistician for each
+sample (rows) across a number of variables (columns). With a single
+value included in each cell and consistently and informatively named
+column headers and values, these tidy data can be easily understood and
+used by your statistician. Importantly, \texttt{PatientID} is coded in
+the exact same way between Hormone\_Data\_raw.csv and
+Demographic\_Data.csv enabling easy merging by the statistician.
+\textbf{C}. Code Book. Here, all pertinent and detailed information
+about both the experiment and the data are conveyed to the statistician.
+This is the place for any extra detail that does not fit into the data
+generator's tidy data tables or spreadsheets. \textbf{D}. Pseudocode.
+This includes information about any processing steps taken to get the
+data into the form in which the statistician is receiving it.
+\label{fig1}}
+\end{figure}
 
 While these are the most critical decisions, there are a number of
 additional things that will make your data set much easier to handle
-\citep{_data_org} (summarized in Box 1). Briefly, it is best to include
-a row at the top of each data table or spreadsheet that contains
-informative column names. And, each cell should include only one value
-or unit of information. Sentences should generally be avoided here; any
-lengthy explanations should instead be included in the ``Code book.''
+\citep{_data_org} (summarized in \textbf{Box\ref{fig1}}). Briefly, it is
+best to include a row at the top of each data table or spreadsheet that
+contains informative column names. And, each cell should include only
+one value or unit of information. Sentences should generally be avoided
+here; any lengthy explanations should instead be included in the ``Code
+book.''
 
 To provide an experimental example, suppose you want to know if
 individuals with diabetes have altered hormonal profiles. To answer this
@@ -257,11 +292,12 @@ would include the measurements for the 20 different hormones. This would
 have 41 rows (a row for the name of the measured hormones at top and
 then one row for each of the 40 individuals in your study) and 51
 columns (one for \texttt{PatientID} and then one for each measurement)
-(\textbf{Figure 1A}). You would have another table or spreadsheet that
-contains the demographic information. It would have six columns
-(\texttt{PatientID}, \texttt{Age}, \texttt{Sex}, \texttt{BMI},
+(\textbf{Figure \ref{fig1}A}). You would have another table or
+spreadsheet that contains the demographic information. It would have six
+columns (\texttt{PatientID}, \texttt{Age}, \texttt{Sex}, \texttt{BMI},
 \texttt{CollectionDate},\texttt{Diagnosis}) and 41 rows (a row with
-variable names, then one row for each patient) (\textbf{Figure 1B}).
+variable names, then one row for each patient) (\textbf{Figure
+\ref{fig1}B}).
 
 With regards to the formatting of these data, if you are sharing your
 data with the collaborator in Excel, the tidy data should be in one
@@ -277,12 +313,19 @@ incorrectly assumes are date or time variables
 the gene \texttt{SEPT9} is the date \texttt{Sept-9} due to default date
 format conversions. Floating-point format conversions cause similar
 problems. To avoid these issues, use ISO 8601 {[}\_iso\_2017{]}
-guidelines when coding date and time variables. (See Box 1). Any time
-data is being formatted, the tidier must be extremely careful that no
-unintended alterations have been made. Spot checking data after tidying,
-which includes, but is not limited to, ensuring the correct number of
-columns and rows are present and that column labels are accurate and
-consistent across spreadsheets, is crucial.
+guidelines when coding date and time variables. (See
+\textbf{Box\ref{box1}}). Any time data is being formatted, the tidier
+must be extremely careful that no unintended alterations have been made.
+Spot checking data after tidying, which includes, but is not limited to,
+ensuring the correct number of columns and rows are present and that
+column labels are accurate and consistent across spreadsheets, is
+crucial.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics{Box1.pdf}
+\caption{Box1 \label{box1}}
+\end{figure}
 
 \subsection{The code book}\label{the-code-book}
 
@@ -322,7 +365,7 @@ conveyed most simply in tabular form. In this case, the columns of the
 table would contain columns including \texttt{VariableName},
 \texttt{Description}, \texttt{Units}, \texttt{CodingNotes}, and
 \texttt{OtherNotes}. Further columns that provide additional information
-to the statistician should be included. (\textbf{Figure 1C})
+to the statistician should be included. (\textbf{Figure \ref{fig1}C})
 
 \subsubsection{How to code variables}\label{how-to-code-variables}
 
@@ -369,14 +412,14 @@ missing. You should also not impute {[}\_imputation\_2017{]}, make up,
 or throw away missing observations.
 
 Explanations for the reasoning behind variable coding guidelines can be
-found in Box 1. Generally, try to avoid coding categorical or ordinal
-variables as numbers. When you enter the value for sex in the tidy data,
-it should be ``male'' or ``female''. The ordinal values in the data set
-should be ``poor'', ``fair'', and ``good'' not 1, 2, 3. This coding is
-attractive because it is self-documenting; any ambiguity or need for
-interpretation by the analyst is removed. This will ultimately avoid
-potential mix-ups about which direction effects go and will help
-identify coding errors.
+found in \textbf{Box\ref{box1}}. Generally, try to avoid coding
+categorical or ordinal variables as numbers. When you enter the value
+for sex in the tidy data, it should be ``male'' or ``female''. The
+ordinal values in the data set should be ``poor'', ``fair'', and
+``good'' not 1, 2, 3. This coding is attractive because it is
+self-documenting; any ambiguity or need for interpretation by the
+analyst is removed. This will ultimately avoid potential mix-ups about
+which direction effects go and will help identify coding errors.
 
 Always encode every piece of information about your observations using
 text. For example, if you are storing data in Excel and use a form of
@@ -409,7 +452,7 @@ know how to code in a scripting language. However, he or she still has
 incentive to make the data tidy for a statistician to speed the process
 of collaboration. In this case, the statistician should be provided
 something called pseudocode {[}\_pseudocode\_2017{]} (\textbf{Figure
-1D}). It should look something like:
+\ref{fig1}D}). It should look something like:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -481,27 +524,6 @@ during analysis.
 \section{Funding}\label{funding}
 
 This work was supported by NIH R01 GM105705.
-
-\section{Figure Legends}\label{figure-legends}
-
-\textbf{Figure 1} -- \textbf{A. Raw (and tidy) data.} The raw
-measurements taken during the experiment are included here for the 40
-patients (rows) and 20 hormones (columns) measured. Indicating that
-these are raw values conveys that no manipulation or computation has
-been done on the included values. \textbf{B. Tidy data.} These data
-convey the important clinical information to your statistician for each
-sample (rows) across a number of variables (columns). With a single
-value included in each cell and consistently and informatively named
-column headers and values, these tidy data can be easily understood and
-used by your statistician. Importantly, \texttt{PatientID} is coded in
-the exact same way between Hormone\_Data\_raw.csv and
-Demographic\_Data.csv enabling easy merging by the statistician.
-\textbf{C. Code Book.} Here, all pertinent and detailed information
-about both the experiment and the data are conveyed to the statistician.
-This is the place for any extra detail that does not fit into the data
-generator's tidy data tables or spreadsheets. \textbf{D. Pseudocode.}
-This includes information about any processing steps taken to get the
-data into the form in which the statistician is receiving it.
 
 \bibliographystyle{agsm}
 \bibliography{DataSharing.bib}
