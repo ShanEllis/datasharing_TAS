@@ -8,6 +8,12 @@ Baggerly, K.  \harvardyearleft 2010\harvardyearright , `Disclose all data in
 Broman, K.  \harvardyearleft n.d.\harvardyearright , `data organization'.
 \newline\harvardurl{http://kbroman.org/dataorg/}
 
+\harvarditem{{\em {JSON}: {The} {Fat}-{Free} {Alternative} to
+  {XML}}}{n.d.}{noauthor_json:_nodate}
+{\em {JSON}: {The} {Fat}-{Free} {Alternative} to {XML}}  \harvardyearleft
+  n.d.\harvardyearright .
+\newline\harvardurl{http://www.json.org/xml.html}
+
 \harvarditem{Leek \harvardand\ Peng}{2015}{leek2015opinion}
 Leek, J.~T. \harvardand\ Peng, R.~D.  \harvardyearleft 2015\harvardyearright ,
   `Opinion: Reproducible research can still be wrong: Adopting a prevention
@@ -17,6 +23,11 @@ Leek, J.~T. \harvardand\ Peng, R.~D.  \harvardyearleft 2015\harvardyearright ,
 \harvarditem{{\em Leek Group}}{n.d.}{_jtleek}
 {\em Leek Group}  \harvardyearleft n.d.\harvardyearright .
 \newline\harvardurl{http://jtleek.com/}
+
+\harvarditem{Newman \harvardand\ Klyne}{n.d.}{newman_date_nodate}
+Newman, C. \harvardand\ Klyne, G.  \harvardyearleft n.d.\harvardyearright ,
+  `Date and {Time} on the {Internet}: {Timestamps}'.
+\newline\harvardurl{https://tools.ietf.org/html/rfc3339.html}
 
 \harvarditem{Peng}{2011}{peng_reproducible_2011}
 Peng, R.~D.  \harvardyearleft 2011\harvardyearright , `Reproducible {Research}

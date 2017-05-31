@@ -186,8 +186,8 @@ throughout the workflow. Here are some examples of the raw form of data:
   The unformatted Excel file with 10 worksheets the company you
   contracted with sent you
 \item
-  The complicated JSON {[}json\_2017{]} data you got from scraping the
-  Twitter API \citep{noauthor_twitter_nodate}
+  The complicated JSON \citep{noauthor_json:_nodate} data you got from
+  scraping the Twitter API \citep{noauthor_twitter_nodate}
 \item
   The hand-entered numbers you collected looking through a microscope
 \end{itemize}
@@ -303,23 +303,21 @@ With regards to the formatting of these data, if you are sharing your
 data with the collaborator in Excel, the tidy data should be in one
 Excel file per table. They should not have multiple worksheets, no
 macros should be applied to the data, and no cells should be
-highlighted. Alternatively, the data could be shared in either a CSV
-{[}\_comma-separated\_2017{]} or TAB-delimited text file
-{[}\_tab-separated\_2017{]}. Caution should always be taken when reading
-CSV files into Excel as it can sometimes lead to non-reproducible
-handling of date variables, time variables, and variables that Excel
-incorrectly assumes are date or time variables
-\citep{zeeberg_mistaken_2004}. For example, Excel incorrectly assumes
-the gene \texttt{SEPT9} is the date \texttt{Sept-9} due to default date
-format conversions. Floating-point format conversions cause similar
-problems. To avoid these issues, use ISO 8601 {[}\_iso\_2017{]}
-guidelines when coding date and time variables. (See
-\textbf{Box\ref{box1}}). Any time data is being formatted, the tidier
-must be extremely careful that no unintended alterations have been made.
-Spot checking data after tidying, which includes, but is not limited to,
-ensuring the correct number of columns and rows are present and that
-column labels are accurate and consistent across spreadsheets, is
-crucial.
+highlighted. Alternatively, the data could be shared in either a CSV or
+TAB-delimited text file. Caution should always be taken when reading CSV
+files into Excel as it can sometimes lead to non-reproducible handling
+of date variables, time variables, and variables that Excel incorrectly
+assumes are date or time variables \citep{zeeberg_mistaken_2004}. For
+example, Excel incorrectly assumes the gene \texttt{SEPT9} is the date
+\texttt{Sept-9} due to default date format conversions. Floating-point
+format conversions cause similar problems. To avoid these issues, use
+ISO 8601 \citep{newman_date_nodate} guidelines when coding date and time
+variables. (See \textbf{Box\ref{box1}}). Any time data is being
+formatted, the tidier must be extremely careful that no unintended
+alterations have been made. Spot checking data after tidying, which
+includes, but is not limited to, ensuring the correct number of columns
+and rows are present and that column labels are accurate and consistent
+across spreadsheets, is crucial.
 
 \begin{figure}[htbp]
 \centering
@@ -370,8 +368,7 @@ to the statistician should be included. (\textbf{Figure \ref{fig1}C})
 \subsubsection{How to code variables}\label{how-to-code-variables}
 
 When you put variables into a spreadsheet there are several main
-categories you will run into depending on their data type
-{[}\_statistical\_2016{]}:
+categories you will run into depending on their data type:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -390,26 +387,24 @@ categories you will run into depending on their data type
 
 Continuous variables are anything measured on a quantitative scale that
 could be any fractional number. An example would be something like
-weight measured in kg. Ordinal data {[}\_ordinal\_2017{]} are data that
-have a fixed, small (\textless{} 100) number of levels but are ordered.
-This could be for example survey responses where the choices are: poor,
-fair, good. Categorical data {[}\_categorical\_2017{]} are data where
-there are multiple categories, but they aren't ordered. One example
-would be sex: male or female. Missing data {[}\_missing\_2016{]} are
-data that are unobserved and you don't know the mechanism. Missing
+weight measured in kg. Ordinal data are data that have a fixed, small
+(\textless{} 100) number of levels but are ordered. This could be for
+example survey responses where the choices are: poor, fair, good.
+Categorical data are data where there are multiple categories, but they
+aren't ordered. One example would be sex: male or female. Missing data
+are data that are unobserved and you don't know the mechanism. Missing
 values should be coded as \texttt{NA}. If, however, missingness is coded
 in an alternative manner, this should be explicitly noted in the code
-book. Censored data {[}\_censoring\_2016{]} are data where you know the
-missingness mechanism on some level. Common examples are a measurement
-being below a detection limit or a patient being lost to follow-up. They
-should also be coded as \texttt{NA} when you don't have the data. But
-you should also add a new column to your tidy data called,
-``VariableNameCensored'' which should have values of \texttt{TRUE} if
-censored and \texttt{FALSE} if not. In the code book you should explain
-why those values are missing. It is absolutely critical to report to the
-analyst if there is a reason you know about that some of the data are
-missing. You should also not impute {[}\_imputation\_2017{]}, make up,
-or throw away missing observations.
+book. Censored data are data where you know the missingness mechanism on
+some level. Common examples are a measurement being below a detection
+limit or a patient being lost to follow-up. They should also be coded as
+\texttt{NA} when you don't have the data. But you should also add a new
+column to your tidy data called, ``VariableNameCensored'' which should
+have values of \texttt{TRUE} if censored and \texttt{FALSE} if not. In
+the code book you should explain why those values are missing. It is
+absolutely critical to report to the analyst if there is a reason you
+know about that some of the data are missing. You should also not
+impute, make up, or throw away missing observations.
 
 Explanations for the reasoning behind variable coding guidelines can be
 found in \textbf{Box\ref{box1}}. Generally, try to avoid coding
@@ -451,8 +446,9 @@ Alternatively, in many cases, the person who collected the data may not
 know how to code in a scripting language. However, he or she still has
 incentive to make the data tidy for a statistician to speed the process
 of collaboration. In this case, the statistician should be provided
-something called pseudocode {[}\_pseudocode\_2017{]} (\textbf{Figure
-\ref{fig1}D}). It should look something like:
+something called pseudocode, which is simply a simple explanation, often
+broken down into steps, to explain what has been done to the data
+(\textbf{Figure \ref{fig1}D}). It should look something like:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
