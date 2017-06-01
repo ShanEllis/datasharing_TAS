@@ -4,9 +4,10 @@
 Baggerly, K.  \harvardyearleft 2010\harvardyearright , `Disclose all data in
   publications', {\em Nature} {\bf 467}(7314),~401.
 
-\harvarditem{Broman}{n.d.}{_data_org}
-Broman, K.  \harvardyearleft n.d.\harvardyearright , `data organization'.
-\newline\harvardurl{http://kbroman.org/dataorg/}
+\harvarditem{Browman \harvardand\ Woo}{n.d.}{woo_browman}
+Browman, K. \harvardand\ Woo, K.  \harvardyearleft n.d.\harvardyearright ,
+  `Data organization in spreadsheets'.
+\newline\harvardurl{https://github.com/dsscollection/data-org-spreadsheets}
 
 \harvarditem{{\em {JSON}: {The} {Fat}-{Free} {Alternative} to
   {XML}}}{n.d.}{noauthor_json:_nodate}
