@@ -100,10 +100,9 @@ during their project. The goals of this guide are to provide some
 instruction on the best way to share data to avoid the most common
 pitfalls and sources of delay in the transition from data collection to
 data analysis \citep{leek2015opinion}. This guide focuses on data
-sharing between collaborators and does not directly address best
+sharing between collaborators. It does not directly address best
 practices for how to make the data behind a published paper available in
-public repositories. While we do not focus on the pitfalls and specific
-requirements of that process here, following many of the guidelines we
+public repositories; however, following many of the guidelines we
 present will be critical during that process as well.
 
 When it comes to collaborations between data collectors and
@@ -272,7 +271,7 @@ data into the form in which the statistician is receiving it.
 
 While these are the most critical decisions, there are a number of
 additional things that will make your data set much easier to handle
-{[}woo\_browman{]} (summarized in \textbf{Box\ref{fig1}}). Briefly, it
+\citep{woo_browman} (summarized in \textbf{Box\ref{fig1}}). Briefly, it
 is best to include a row at the top of each data table or spreadsheet
 that contains informative column names. And, each cell should include
 only one value or unit of information. Sentences should generally be
@@ -286,16 +285,16 @@ individuals with diabetes as well as 20 healthy controls. This blood was
 used to measure blood levels for 50 different hormones. These
 measurements would comprise your first `kind' of data (see \#3 above).
 You have also collected demographic information from the patients
-including their age, sex, BMI, treatment, and diagnosis (your second
-``kind'' of data). For this example, your first table or spreadsheet
-would include the measurements for the 20 different hormones. This would
-have 41 rows (a row for the name of the measured hormones at top and
-then one row for each of the 40 individuals in your study) and 51
-columns (one for \texttt{PatientID} and then one for each measurement)
-(\textbf{Figure \ref{fig1}A}). You would have another table or
-spreadsheet that contains the demographic information. It would have six
-columns (\texttt{PatientID}, \texttt{Age}, \texttt{Sex}, \texttt{BMI},
-\texttt{CollectionDate},\texttt{Diagnosis}) and 41 rows (a row with
+including their age, sex, BMI, and diagnosis (your second ``kind'' of
+data). For this example, your first table or spreadsheet would include
+the measurements for the 20 different hormones. This would have 41 rows
+(a row for the name of the measured hormones at top and then one row for
+each of the 40 individuals in your study) and 51 columns (one for
+\texttt{PatientID} and then one for each measurement) (\textbf{Figure
+\ref{fig1}A}). You would have another table or spreadsheet that contains
+the demographic information. It would have six columns
+(\texttt{PatientID}, \texttt{Age}, \texttt{Sex}, \texttt{BMI},
+\texttt{CollectionDate}, \texttt{Diagnosis}) and 41 rows (a row with
 variable names, then one row for each patient) (\textbf{Figure
 \ref{fig1}B}).
 
@@ -312,12 +311,12 @@ example, Excel incorrectly assumes the gene \texttt{SEPT9} is the date
 \texttt{Sept-9} due to default date format conversions. Floating-point
 format conversions cause similar problems. To avoid these issues, use
 ISO 8601 \citep{newman_date_nodate} guidelines when coding date and time
-variables. (See \textbf{Box\ref{box1}}). Any time data is being
-formatted, the tidier must be extremely careful that no unintended
-alterations have been made. Spot checking data after tidying, which
-includes, but is not limited to, ensuring the correct number of columns
-and rows are present and that column labels are accurate and consistent
-across spreadsheets, is crucial.
+variables. (See \textbf{Box\ref{box1}}). Whenever data is being
+formatted, the person tidying the data must be extremely careful that no
+unintended alterations have been made. Spot checking data after tidying,
+which includes, but is not limited to, ensuring the correct number of
+columns and rows are present and that column labels are accurate and
+consistent across spreadsheets, is crucial.
 
 \begin{figure}[htbp]
 \centering
@@ -348,11 +347,11 @@ In our blood example, the statistician would want to know what the unit
 of measurement for each demographic variable is (age in years, treatment
 dose, level of diagnosis and how heterogeneous). They would also want to
 know any other information about how you did the data collection and
-study design. For example, are these the first 20 patients that walked
-into the clinic? Are they 20 highly selected patients by some
-characteristic like age? Are they randomized to treatments? This is the
-place for any detail about either the experimental design or the data
-itself that may be informative to the statistician.
+study design. For example, are these the first 20 patients with diabetes
+that walked into the clinic? Are they 20 highly selected patients by
+some characteristic like age? Are they randomized to treatments? This is
+the place for any detail about either the experimental design or the
+data itself that may be informative to the statistician.
 
 A common format for this document is a Word file. There should be a
 section called ``Study design'' that has a thorough description of the
