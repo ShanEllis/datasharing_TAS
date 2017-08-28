@@ -4,10 +4,11 @@
 Baggerly, K.  \harvardyearleft 2010\harvardyearright , `Disclose all data in
   publications', {\em Nature} {\bf 467}(7314),~401.
 
-\harvarditem{Browman \harvardand\ Woo}{n.d.}{woo_browman}
-Browman, K. \harvardand\ Woo, K.  \harvardyearleft n.d.\harvardyearright ,
-  `Data organization in spreadsheets'.
-\newline\harvardurl{https://github.com/dsscollection/data-org-spreadsheets}
+\harvarditem{Broman \harvardand\ Woo}{2017}{broman_data_2017}
+Broman, K.~W. \harvardand\ Woo, K.~H.  \harvardyearleft 2017\harvardyearright ,
+  Data organization in spreadsheets, Technical Report e3183v1, PeerJ Preprints.
+\newblock DOI: 10.7287/peerj.preprints.3183v1.
+\newline\harvardurl{https://peerj.com/preprints/3183}
 
 \harvarditem{{\em {JSON}: {The} {Fat}-{Free} {Alternative} to
   {XML}}}{n.d.}{noauthor_json:_nodate}
@@ -20,10 +21,6 @@ Leek, J.~T. \harvardand\ Peng, R.~D.  \harvardyearleft 2015\harvardyearright ,
   `Opinion: Reproducible research can still be wrong: Adopting a prevention
   approach', {\em Proceedings of the National Academy of Sciences} {\bf
   112}(6),~1645--1646.
-
-\harvarditem{{\em Leek Group}}{n.d.}{_jtleek}
-{\em Leek Group}  \harvardyearleft n.d.\harvardyearright .
-\newline\harvardurl{http://jtleek.com/}
 
 \harvarditem{Newman \harvardand\ Klyne}{n.d.}{newman_date_nodate}
 Newman, C. \harvardand\ Klyne, G.  \harvardyearleft n.d.\harvardyearright ,
@@ -41,10 +38,6 @@ Peng, R.~D.  \harvardyearleft 2011\harvardyearright , `Reproducible {Research}
   n.d.\harvardyearright .
 \newline\harvardurl{https://www.r-project.org/}
 
-\harvarditem{{\em Twitter}}{n.d.}{noauthor_twitter_nodate}
-{\em Twitter}  \harvardyearleft n.d.\harvardyearright .
-\newline\harvardurl{https://twitter.com/}
-
 \harvarditem[White et~al.]{White, Baldridge, Brym, Locey, McGlinn \harvardand\
   Supp}{2013}{white_nine_2013}
 White, E.~P., Baldridge, E., Brym, Z.~T., Locey, K.~J., McGlinn, D.~J.
@@ -58,13 +51,23 @@ Wickham, H.  \harvardyearleft 2014\harvardyearright , `Tidy data', {\em Journal
   of Statistical Software} {\bf 59}(10).
 \newline\harvardurl{https://www.jstatsoft.org/article/view/v059i10}
 
+\harvarditem[Wilson et~al.]{Wilson, Aruliah, Brown, Hong, Davis, Guy, Haddock,
+  Huff, Mitchell, Plumbley, Waugh, White \harvardand\
+  Wilson}{2014}{wilson_best_2014}
+Wilson, G., Aruliah, D.~A., Brown, C.~T., Hong, N. P.~C., Davis, M., Guy,
+  R.~T., Haddock, S. H.~D., Huff, K.~D., Mitchell, I.~M., Plumbley, M.~D.,
+  Waugh, B., White, E.~P. \harvardand\ Wilson, P.  \harvardyearleft
+  2014\harvardyearright , `Best {Practices} for {Scientific} {Computing}', {\em
+  PLOS Biology} {\bf 12}(1),~e1001745.
+\newline\harvardurl{http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745}
+
 \harvarditem[Wilson et~al.]{Wilson, Bryan, Cranston, Kitzes, Nederbragt
-  \harvardand\ Teal}{2016}{wilson_good_2016}
+  \harvardand\ Teal}{2017}{wilson_good_2017}
 Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L. \harvardand\
-  Teal, T.~K.  \harvardyearleft 2016\harvardyearright , `Good {Enough}
-  {Practices} in {Scientific} {Computing}', {\em arXiv:1609.00037 [cs]} .
-\newblock arXiv: 1609.00037.
-\newline\harvardurl{http://arxiv.org/abs/1609.00037}
+  Teal, T.~K.  \harvardyearleft 2017\harvardyearright , `Good enough practices
+  in scientific computing', {\em PLOS Computational Biology} {\bf
+  13}(6),~e1005510.
+\newline\harvardurl{http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510}
 
 \harvarditem[Zeeberg et~al.]{Zeeberg, Riss, Kane, Bussey, Uchio, Linehan,
   Barrett \harvardand\ Weinstein}{2004}{zeeberg_mistaken_2004}
